@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.venkatesh.hw07.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/et_email"
+        android:id="@+id/textView"
+        android:layout_marginTop="70dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_email"
+        android:layout_marginTop="90dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/et_password"
+        android:layout_marginTop="150dp"
+        android:id="@+id/textView1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/editText_password"
+        android:layout_marginTop="180dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_login"
+        android:id="@+id/button_login"
+        android:layout_marginTop="250dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_create"
+        android:layout_marginTop="300dp"
+        android:id="@+id/button_createNewAccount"
+        />
+
+    <com.facebook.login.widget.LoginButton
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:id="@+id/fblogin"
+        android:layout_below="@id/button_createNewAccount"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/fblogin"
+        android:layout_marginTop="10dp"
+        />
+
+    </RelativeLayout>
+
+
